@@ -27,7 +27,8 @@ body,
 .item,
 .quote,
 .call,
-.call-text {
+.call-text,
+.footer {
   display: flex;
 }
 
@@ -141,6 +142,7 @@ body,
   align-items: center;
   justify-content: center;
   padding: 96px;
+  align-self: stretch;
 }
 
 .quotation {
@@ -149,11 +151,12 @@ body,
   font-size: 36px;
   font-weight: lighter;
   padding: 24px;
+  max-width: 800px;
 }
 
 .quoted {
   align-self: flex-end;
-  padding: 16px;
+  padding-right: 32px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -189,4 +192,14 @@ body,
   border-color: #F9FAF8;
   border-radius: 8px;
   padding: 8px 24px;
+}
+
+.footer {
+  background-color: #1F2937;
+  justify-content: center;
+  color: #E5E7EB;
+  font-size: 18px;
+  align-items: center;
+  align-self: stretch;
+  padding: 40px;
 }
