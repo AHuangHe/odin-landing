@@ -25,7 +25,9 @@ body,
 .info,
 .items,
 .item,
-.quote {
+.quote,
+.call,
+.call-text {
   display: flex;
 }
 
@@ -154,4 +156,37 @@ body,
   padding: 16px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.call {
+  max-width: 800px;
+  background-color: #3882F6;
+  padding: 16px 64px;
+  margin: 80px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  border-radius: 8px;
+  color: #F9FAF8;
+}
+
+.call-text {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-text h1 {
+  margin-bottom: 0px;
+}
+
+.call-text p {
+  margin-top: 0px;
+}
+
+.call button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  border-color: #F9FAF8;
+  border-radius: 8px;
+  padding: 8px 24px;
 }
