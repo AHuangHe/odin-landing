@@ -20,7 +20,11 @@ body,
 .header,
 .left-links,
 .right-links,
-.hero {
+.hero,
+.hero-img,
+.info,
+.items,
+.item {
   display: flex;
 }
 
@@ -54,7 +58,7 @@ body,
 
 .hero-left,
 .hero-img {
-    margin: 24px 24px;
+  margin: 24px 24px;
 }
 
 .hero-left {
@@ -85,7 +89,6 @@ body,
 }
 
 .hero-img {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: gray;
@@ -96,4 +99,35 @@ body,
 .header .left-links a {
   color: #F9FAF8;
   font-weight: 600;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  margin: 32px;
+  padding-bottom: 64px;
+  color: #1F2937;
+}
+
+.info-title {
+  font-size: 36px;
+  font-weight: bolder;
+  padding: 24px;
+}
+
+.items {
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 200px;
+  height: 300px;
 }
